@@ -78,7 +78,7 @@
       </section>
 
       <!-- About -->
-      <section id="about" class="section">
+      <section id="about" class="section max-container">
         <h2 class="title">About me</h2>
         <p class="description">
           정보처리기사 자격증으로 개발의 기초를 다졌고, 대학 캡스톤 프로젝트에서
@@ -88,29 +88,54 @@
           코드를 고민하고, 함께 성장하는 개발자가 되는 것을 목표로 하고
           있습니다.
         </p>
-        <ul>
-          <li>
-            <i class="fa-brands fa-html5"></i>
-            <p>Front-end</p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end</p>
             <p>HTML, CSS, JavaScript, TypeScript, React, Vue</p>
           </li>
-          <li>
-            <i class="fa-solid fa-mobile"></i>
-            <p>Mobile</p>
+          <li class="major">
+            <i class="fa-solid fa-mobile major__icon"></i>
+            <p class="major__title">Mobile</p>
             <p>Android, IOS, React Navtive, Flutter, Java</p>
           </li>
-          <li>
-            <i class="fa-solid fa-server"></i>
-            <p>Back-end</p>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">Back-end</p>
             <p>Java, JavaScript, NodeJs, JSP, Rest APIs</p>
           </li>
         </ul>
-        <ul>
-          <li>
-            <img src="images/jobs/semyung.png" alt="semyung logo" />
+        <ul class="jobs">
+          <li class="job">
+            <img
+              class="job__img"
+              src="images/jobs/semyung.png"
+              alt="semyung logo"
+            />
             <div>
-              <p>세명대학교 졸업</p>
-              <p>2020 - 2026</p>
+              <p class="job__name">세명대학교 정보통신학부 졸업</p>
+              <p class="job__period">2020년 3월 - 2026년 2월</p>
+            </div>
+          </li>
+          <li class="job">
+            <img class="job__img" src="images/jobs/SIST.png" alt="쌍용 로고" />
+            <div>
+              <p class="job__name">
+                쌍용교육센터 AWS & CI/CD 기반 Java 클라우드 Full-Strack 개발자
+                양성 교육 수료
+              </p>
+              <p class="job__period">2025년 7월 - 2026년 2월</p>
+            </div>
+          </li>
+          <li class="job">
+            <img
+              class="job__img"
+              src="images/jobs/EngineerInformationProcessing.png"
+              alt="정처기 로고"
+            />
+            <div>
+              <p class="job__name">정보처리기사 자격증 취득</p>
+              <p class="job__period">2025년 9월 12일</p>
             </div>
           </li>
         </ul>
