@@ -12,7 +12,17 @@ document.addEventListener("scroll", function () {
 
 // Home 섹션을 아래로 스크롤시 투명하게 처리함.
 const home = document.querySelector(".home__container");
-const homeheight = home.offsetHeight;
+const homeHeight = home.offsetHeight;
 document.addEventListener("scroll", function () {
-  home.style.opacity = 1 - window.scrollY / homeheight;
+  home.style.opacity = 1 - window.scrollY / homeHeight; // 인 라인 스타일을 이용함 -> home.style.opacity
+});
+
+// Arrow Up 버튼을 아래로 스크롤시 투명하게 처리함.
+const arrowUp = document.querySelector(".arrow-up");
+document.addEventListener("scroll", function () {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.style.opacity = 1;
+  } else {
+    arrowUp.style.opacity = 0;
+  }
 });
