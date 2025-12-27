@@ -236,25 +236,25 @@
         <div class="max-container">
           <h2 class="title">My Work</h2>
           <p class="discription">Projects</p>
-          <ul class="categoris">
+          <ul class="categories">
             <li>
-              <button class="category category--selected">
-                All <span class="category__count">2</span>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="front-end">
                 Front-end <span class="category__count">1</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Back-end <span class="category__count">1</span>
+              <button class="category" data-category="back-end">
+                Back-end <span class="category__count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="images/project images/SemiProject1.webp"
@@ -263,11 +263,12 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #1</h3>
-                  <p>JavaSwing, GUI 사용</p>
+                  <p>병원 관리 시스템</p>
+                  <small>JavaSwing, GUI 사용</small>
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/project images/Capstone.webp"
@@ -276,7 +277,22 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Capstone Project</h3>
-                  <p>HTML,CSS,JavaScript 사용</p>
+                  <p>스마트 강의실</p>
+                  <small>HTML,CSS,JavaScript 사용</small>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="back-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/project images/SemiProject2.webp"
+                  alt="project2"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #2</h3>
+                  <p>그룹웨어</p>
+                  <small>JSP & Model1 방식</small>
                 </div>
               </a>
             </li>
