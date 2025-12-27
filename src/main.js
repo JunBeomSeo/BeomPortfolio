@@ -26,3 +26,10 @@ document.addEventListener("scroll", function () {
     arrowUp.style.opacity = 0;
   }
 });
+
+// Navbar 토글버튼 클릭 처리
+const navbarMenu = document.querySelector(".header__menu");
+const navbarToggle = document.querySelector(".header__toggle");
+navbarToggle.addEventListener("click", function () {
+  navbarMenu.classList.toggle("open");
+});

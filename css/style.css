@@ -54,7 +54,7 @@ button {
 }
 
 button:focus {
-  outline: 1px solid var(--color-accent);
+  outline: 1px solid transparent;
 }
 /* Common(섹션 공통 스타일링) */
 .section {
@@ -109,6 +109,15 @@ button:focus {
   font-size: 1.8rem;
 }
 
+.header__toggle {
+  display: none;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+}
+
 .header__menu {
   display: flex;
   gap: 4px;
@@ -116,6 +125,8 @@ button:focus {
 
 .header__menu__item {
   padding: 8px 16px; /* 위, 아래는 8px 양 옆은 16px*/
+  display: block;
+  border-bottom: 1px solid transparent;
 }
 
 .header__menu__item:hover {
@@ -433,7 +444,7 @@ button:focus {
 /* 모바일버전 */
 @media screen and (max-width: 768px) {
   .section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
 
   .tltle {
@@ -449,11 +460,21 @@ button:focus {
     align-items: start;
   }
 
+  .header__toggle {
+    display: block;
+  }
+
   .header__menu {
+    display: none;
     flex-direction: column;
     text-align: center;
     padding: 1rem 4rem;
     gap: 1rem;
+  }
+
+  .header__menu.open {
+    display: flex;
+    background-color: var(--color-primary);
   }
 
   .header__nav {
