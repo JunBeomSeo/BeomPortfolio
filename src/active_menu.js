@@ -6,6 +6,7 @@
 // - 만약 다수의 섹션이 동시에 보여진다면, 가장 첫번째 섹션을 선택
 //    (현재 화면에 보여지고 있는 section들을 알아야함.)
 // - 마지막 contact 섹션이 보여진다면, 가장 마지막 섹션을 선택
+"use strict";
 const sectionIds = ["#home", "#about", "#skills", "#work", "#contact"];
 const sections = sectionIds.map((id) => document.querySelector(id));
 const navItems = sectionIds.map(
