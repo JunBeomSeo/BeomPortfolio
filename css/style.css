@@ -22,6 +22,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif; /* Open Sans가 안되면 sans-serif로 대체 하겠다는 뜻임 */
   margin: 0;
