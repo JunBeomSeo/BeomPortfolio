@@ -45,7 +45,8 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif; /* Open Sans가 안되면 sans-serif로 대체 하겠다는 뜻임 */
+  font-family:
+    "Open Sans", sans-serif; /* Open Sans가 안되면 sans-serif로 대체 하겠다는 뜻임 */
   margin: 0;
 }
 
@@ -191,16 +192,15 @@ button:focus {
   position: relative;
   display: flex;
   align-items: center;
-  padding-top: 3rem;
 }
 
 .home__avatar {
   background: var(--home-avatar-svg);
   position: relative;
   bottom: -70px;
-  width: 600px;
-  height: 660px;
-  object-fit: cover;
+  width: 550px;
+  height: 700px;
+  overflow: hidden;
   flex-shrink: 0;
 }
 
@@ -330,9 +330,12 @@ button:focus {
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 .skills__title {
