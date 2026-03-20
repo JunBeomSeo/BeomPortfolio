@@ -212,7 +212,7 @@ button:focus {
 }
 
 .home__title {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -221,6 +221,7 @@ button:focus {
   white-space: nowrap;
   display: inline-block;
   min-width: 360px;
+  font-size: 1.5rem;
 }
 
 .home__title .ti-cursor {
