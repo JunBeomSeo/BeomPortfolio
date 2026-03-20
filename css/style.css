@@ -214,11 +214,11 @@ button:focus {
 .home__title {
   font-size: 3rem;
   margin-bottom: 1rem;
-  white-space: nowrap;
 }
 
 .home__title--strong {
   color: var(--color-accent);
+  white-space: nowrap;
   display: inline-block;
   min-width: 360px;
 }
